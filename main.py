@@ -125,7 +125,6 @@ if __name__ == "__main__":
     vocab, text = import_data()
     num_of_runs = 10
 
-    val = test_values[7]
     for val in test_values:
         for i in range(num_of_runs):
             main(vocab, text, i, val['pop_size'], val['cross_rate'], val['mut_rate'])
